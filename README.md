@@ -16,6 +16,10 @@ This project is a responsive landing page for a gym, built with modern web techn
 * **JavaScript** - For interactive elements and dynamic functionality.
 * **NPM** - For package management
 
+## Live Demo
+
+You can view the live demo of this project here: [Gym Landing Page Project](https://gym-landing-page-4cp.pages.dev/)
+
 ## Getting Started
 
 1. Clone the repository:
