@@ -159,5 +159,22 @@ document.getElementById('trial-btn').addEventListener('click', (e)=>{
     window.alert(`Congrations ${rname}! You can start your free trial now.`);
 });
 
+// Reveal transition animation for sections
+function revealSections() {
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const triggerHeight = window.innerHeight * 0.8; // Trigger when 80% of the viewport
+
+        if (sectionTop < triggerHeight) {
+            section.classList.add("opacity-100", "translate-y-0");
+        }
+    });
+};
+
+// Initial check when page loads
+window.addEventListener("load", revealSections);
+// Check on scroll
+window.addEventListener("scroll", revealSections);
+
 // footer auto year
 document.getElementById('autoyear').innerHTML = new Date().getUTCFullYear();
